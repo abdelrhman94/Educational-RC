@@ -4,9 +4,51 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
     <title>Educational RC</title>
   </head>
-  <body>
+  <body onload="myFunction()">
+    <div class="loader"></div>
+  <div class="content">
+    <header class="header">
+      <h1>What's in the basket? Choose and write.</h1>
+      <span>
+        <img src="/assets/resourse_icon.png" alt="resousre" />
+        <img src="/assets/help_icon.png" alt="help" />
+      </span>
+    </header>
+    <main>
+      <div class="container">
+        <ul class="boxes">
+          <li onclick="selectItem( this)">eraser</li>
+          <li onclick="selectItem( this)">ruler</li>
+          <li onclick="selectItem( this)">bag</li>
+          <li onclick="selectItem( this)">pencil case</li>
+          <li onclick="selectItem( this)">pencil</li>
+          <li onclick="selectItem( this)">book</li>
+          <li onclick="selectItem( this)">pen</li>
+          <li onclick="selectItem( this)">scissors</li>
+        </ul>
+      <div class="answers">
+        <div class="column">
+          <div class="answer" onclick="setItem(this)"></div>
+          <div class="answer" onclick="setItem(this)"></div>
+        </div>
+        <div class="answer third column" onclick="setItem(this)"></div>
+        <div class="column">
+          <div class="answer" onclick="setItem(this)"></div>
+          <div class="answer" onclick="setItem(this)"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <img src="/assets/replay_icon.png" alt="replay" />
+      <img src="/assets/showAns_icon.png" alt="show" />
+    </footer>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>

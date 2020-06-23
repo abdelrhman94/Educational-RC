@@ -1,0 +1,123 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-weight: bolder;
+}
+.content {
+  display: none;
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s;
+}
+body {
+  box-sizing: border-box;
+}
+
+img {
+  width: 60px;
+  cursor: pointer;
+}
+
+li {
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.container {
+  background-image: url('/assets/p15e11.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  position: relative;
+  height: 67vh;
+  background-size: contain;
+  border: 3px solid #f5821f;
+  border-radius: 20px;
+}
+
+.boxes {
+  list-style: none;
+  display: flex;
+  width: 40%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.boxes li {
+  border: 1px solid #0fa0c5;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 5px;
+}
+
+.selected {
+  background-color: #0fa0c5;
+  color: white;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 10px;
+}
+
+.answers {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 31px;
+  width: 100%;
+}
+.answer {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  cursor: pointer;
+}
+
+.third {
+  align-self: flex-end;
+}
+.column {
+  flex: 0 0 33%;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
