@@ -16,7 +16,7 @@
     <header class="header">
       <h1>What's in the basket? Choose and write.</h1>
       <span>
-        <img src="/assets/resourse_icon.png" alt="resousre" />
+        <img src="/assets/resources_icon.png" alt="resources" />
         <img src="/assets/help_icon.png" alt="help" />
       </span>
     </header>
@@ -45,10 +45,12 @@
       </div>
     </main>
     <footer>
-      <img src="/assets/replay_icon.png" alt="replay" />
-      <img src="/assets/showAns_icon.png" alt="show" />
+      <img  src="/assets/replay_icon.png" alt="replay"  onclick="rest()"/>
+      <img src="/assets/showAns_icon.png" alt="show"  onclick="correctAnswers()"/>
     </footer>
     </div>
+    <audio id="correct" type="audio/mpeg" src="/assets/correct.mp3"></audio> 
+    <audio id="incorrect" type="audio/mp3" src="/assets/incorrect.mp3"></audio> 
     <script src="index.js"></script>
   </body>
 </html>

@@ -1,6 +1,6 @@
 html {
   font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   box-sizing: border-box;
   font-weight: bolder;
 }
@@ -9,9 +9,7 @@ html {
   width: 60%;
   margin: 0 auto;
   position: relative;
-  -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
   animation-duration: 1s;
 }
 body {
@@ -46,7 +44,7 @@ li {
 .boxes {
   list-style: none;
   display: flex;
-  width: 40%;
+  width: 60%;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 auto;
@@ -54,6 +52,7 @@ li {
 .boxes li {
   border: 1px solid #0fa0c5;
   padding: 10px;
+  font-size: 1.5rem;
   border-radius: 15px;
   margin: 5px;
 }
@@ -113,11 +112,11 @@ audio:not([controls]) {
   animation: spin 2s linear infinite;
 }
 
-@-webkit-keyframes spin {
+@keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
